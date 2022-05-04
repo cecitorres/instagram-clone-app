@@ -1,52 +1,14 @@
+import StoryItem from './StoryItem';
+
 const Stories = () => {
   return (
     <>
-      <div className="stories">
-        <div class="max-w-2xl mx-auto p-8">
-          <ul class="flex space-x-6">
-            <li class="flex flex-col items-center space-y-1 ">
-              <div class="relative bg-gradient-to-tr from-yellow-500 to-fuchsia-600 p-1 rounded-full">
-                <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
-                  <img class="w-24 h-24 rounded-full" src="https://placekitten.com/200/200" alt="cute kitty" />
-                </a>
-                <button class="absolute bg-blue-500 text-white text-2xl font-medium w-8 h-8 rounded-full bottom-0 right-1 border-4 border-white flex justify-center items-center font-mono hover:bg-blue-700 focus:outline-none">
-                  <div class="transform -translate-y-px">+</div>
-                </button>
-              </div>
-
-              <a href="#">kitty_one</a>
-            </li>
-
-            <li class="flex flex-col items-center space-y-1 ">
-              <div class="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 p-1 rounded-full">
-                <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
-                  <img class="w-24 h-24 rounded-full" src="https://placekitten.com/201/200" alt="cute kitty" />
-                </a>
-              </div>
-
-              <a href="#">kitty_two</a>
-            </li>
-
-            <li class="flex flex-col items-center space-y-1 ">
-              <div class="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 p-1 rounded-full">
-                <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
-                  <img class="w-24 h-24 rounded-full" src="https://placekitten.com/200/203" alt="cute kitty" />
-                </a>
-              </div>
-
-              <a href="#">kitty_three</a>
-            </li>
-
-            <li class="flex flex-col items-center space-y-1 ">
-              <div class="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 p-1 rounded-full">
-                <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
-                  <img class="w-24 h-24 rounded-full" src="https://placekitten.com/202/201" alt="cute kitty" />
-                </a>
-              </div>
-
-              <a href="#">kitty_four</a>
-            </li>
-
+      <div className="relative rounded-xl overflow-auto">
+        <div className="max-w-2xl mx-auto min-w-0">
+          <ul className="overflow-auto flex py-4">
+            { new Array(10).fill(0).map((_, index) => (
+              <StoryItem key={index} storyData={{ avatarURL: 'images/avatars/mariela.jpeg', altText: 'mariela', username: 'Mariela' }} showPlus={index === 0 && true}/>
+            )) }
           </ul>
         </div>
       </div>
