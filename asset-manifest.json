@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cecitorres/instagram-clone-app/static/css/main.a2766b92.css",
+    "main.js": "/cecitorres/instagram-clone-app/static/js/main.3a0ee360.js",
+    "static/js/787.25b18803.chunk.js": "/cecitorres/instagram-clone-app/static/js/787.25b18803.chunk.js",
+    "index.html": "/cecitorres/instagram-clone-app/index.html",
+    "main.a2766b92.css.map": "/cecitorres/instagram-clone-app/static/css/main.a2766b92.css.map",
+    "main.3a0ee360.js.map": "/cecitorres/instagram-clone-app/static/js/main.3a0ee360.js.map",
+    "787.25b18803.chunk.js.map": "/cecitorres/instagram-clone-app/static/js/787.25b18803.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2766b92.css",
+    "static/js/main.3a0ee360.js"
+  ]
+}
