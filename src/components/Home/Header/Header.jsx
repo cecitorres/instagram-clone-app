@@ -6,7 +6,6 @@
 // } from './atoms';
 import { Link } from 'react-router-dom';
 
-
 const Header = () => {
   // return (
   //   <navbar>
@@ -17,54 +16,43 @@ const Header = () => {
   //   </navbar>
   // );
   return (
-    <header className="h-16 bg-white border-b border-gray-primary">
-      <div className="container mx-auto max-w-screen-lg h-full">
-        <div className="flex justify-between h-full">
+    <header className="h-12 bg-white border-b border-gray-primary sticky top-0 z-10">
+      {/* <div className="container mx-auto max-w-screen-lg h-full"> */}
+        <div className="flex items-center justify-between h-full w-full bg-white">
+          <div className='flex items-center align-items px-4'>
+            <svg aria-label="New Story" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="13.191" fill="none" r="4.539" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></circle><path d="M18.592 21.374A3.408 3.408 0 0022 17.966V8.874a3.41 3.41 0 00-3.41-3.409h-.52a2.108 2.108 0 01-1.954-1.375 2.082 2.082 0 00-2.204-1.348h-3.824A2.082 2.082 0 007.884 4.09 2.108 2.108 0 015.93 5.465h-.52A3.41 3.41 0 002 8.875v9.091a3.408 3.408 0 003.408 3.408z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+          </div>
           <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
             <h1 className="flex justify-center w-full">
               <Link to="/" aria-label="Instagram logo">
-                <img src="/images/logo.png" alt="Instagram" className="mt-2 w-6/12" />
+                <img src="/images/logo.png" alt="Instagram" className="w-6/12 mx-auto" />
               </Link>
             </h1>
           </div>
-          <div className="text-gray-700 text-center flex items-center align-items">
-            <Link to="/" aria-label="Dashboard">
-              New Post
-            </Link>
-            <Link to="/" aria-label="Dashboard">
-              Likes
-            </Link>
-            <Link to="/" aria-label="Dashboard">
-              Inbox
-            </Link>
+          <div className="text-gray-700 text-center flex items-center align-items px-4">
+            {/* Home */}
             {/* <Link to="/" aria-label="Dashboard">
-              <svg
-                className="w-8 mr-6 text-black-light cursor-pointer"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
             </Link> */}
-
-            {/* <div className="flex items-center cursor-pointer">
-              <Link to={`/p/username`}>
-                <img
-                  className="rounded-full h-8 w-8 flex"
-                  src="/images/avatars/default.png"
-                  alt="username profile"
-                />
-              </Link>
-            </div> */}
+            {/* Inbox */}
+            <Link to="/" aria-label="Dashboard">
+              <svg aria-label="Messenger" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path><path d="M17.79 10.132a.659.659 0 00-.962-.873l-2.556 2.05a.63.63 0 01-.758.002L11.06 9.47a1.576 1.576 0 00-2.277.42l-2.567 3.98a.659.659 0 00.961.875l2.556-2.049a.63.63 0 01.759-.002l2.452 1.84a1.576 1.576 0 002.278-.42z" fill-rule="evenodd"></path></svg>
+            </Link>
+            {/* Add */}
+            {/* <Link to="/" aria-label="Dashboard">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </Link>
+            <Link to="/" aria-label="Dashboard">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </Link> */}
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </header>
   );

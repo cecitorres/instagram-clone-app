@@ -1,6 +1,7 @@
 import Header from "../components/Home/Header/Header";
 import Stories from "../components/Home/Stories/Stories";
 import Timeline from "../components/Home/Timeline/Timeline";
+import Footer from "../components/Home/Footer/Footer";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <Stories />
       <Timeline />
+      <Footer />
     </>
   );
 };
