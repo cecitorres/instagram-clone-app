@@ -1,13 +1,16 @@
+import { useStoriesContext } from '../../../context/stories';
 import StoryItem from './StoryItem';
 
 const Stories = () => {
+  const { stories } = useStoriesContext();
+
   return (
     <>
-      <div className="relative rounded-xl overflow-auto">
-        <div className="max-w-2xl mx-auto min-w-0">
-          <ul className="overflow-auto flex px-2 py-4">
-            { new Array(10).fill(0).map((_, index) => (
-              <StoryItem key={index} storyData={{ avatarURL: 'images/avatars/mariela.jpeg', altText: 'mariela', username: 'Mariela' }} showPlus={index === 0 && true}/>
+      <div className="relative overflow-auto rounded-xl">
+        <div className="max-w-2xl min-w-0 mx-auto">
+          <ul className="flex px-2 py-4 overflow-auto">
+            { stories.map(({id, username, image}, index) => (
+              <StoryItem key={id} storyData={{ image, username }} showPlus={index === 0 && true}/>
             )) }
           </ul>
         </div>
