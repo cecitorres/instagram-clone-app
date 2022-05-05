@@ -1,8 +1,13 @@
 // import { usePostsContext } from '../../../context/posts';
+import usePosts from '../../../hooks/use-posts';
 import Post from './Post';
 
 const Timeline = () => {
-  // const { posts } = usePostsContext();
+  const user = {
+    userId: '1',
+    following: [1]
+  }
+  const { posts } = usePosts(user);
 
   return (
     <div className='w-full bg-gray-100 border-t-2'>

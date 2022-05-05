@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <header className="h-12 bg-white border-b border-gray-primary sticky bottom-0 z-10">
-      {/* <div className="container mx-auto max-w-screen-lg h-full"> */}
-      <div className="flex items-center justify-between h-full w-full bg-white px-4">
+    <header className="sticky bottom-0 z-10 h-12 bg-white border-b border-gray-primary">
+      {/* <div className="container h-full max-w-screen-lg mx-auto"> */}
+      <div className="flex items-center justify-between w-full h-full px-4 bg-white">
         {/* Home */}
         <div className='px-2'>
           <a href="">
@@ -42,8 +42,8 @@ const Footer = () => {
           <div className="flex items-center cursor-pointer">
             <Link to={`/p/username`}>
               <img
-                className="rounded-full h-8 w-8 flex"
-                src="/images/avatars/ceci.jpeg"
+                className="flex w-8 h-8 rounded-full"
+                src="images/avatars/ceci.jpeg"
                 alt="username profile"
               />
             </Link>

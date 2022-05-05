@@ -16,23 +16,23 @@ const Header = () => {
   //   </navbar>
   // );
   return (
-    <header className="h-12 bg-white border-b border-gray-primary sticky top-0 z-10">
-      {/* <div className="container mx-auto max-w-screen-lg h-full"> */}
-        <div className="flex items-center justify-between h-full w-full bg-white">
-          <div className='flex items-center align-items px-4'>
+    <header className="sticky top-0 z-10 h-12 bg-white border-b border-gray-primary">
+      {/* <div className="container h-full max-w-screen-lg mx-auto"> */}
+        <div className="flex items-center justify-between w-full h-full bg-white">
+          <div className='flex items-center px-4 align-items'>
             <svg aria-label="New Story" className="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="13.191" fill="none" r="4.539" stroke="currentColor" strokeLinejoin="round" strokeWidth="2"></circle><path d="M18.592 21.374A3.408 3.408 0 0022 17.966V8.874a3.41 3.41 0 00-3.41-3.409h-.52a2.108 2.108 0 01-1.954-1.375 2.082 2.082 0 00-2.204-1.348h-3.824A2.082 2.082 0 007.884 4.09 2.108 2.108 0 015.93 5.465h-.52A3.41 3.41 0 002 8.875v9.091a3.408 3.408 0 003.408 3.408z" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2"></path></svg>
           </div>
-          <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
+          <div className="flex items-center text-center text-gray-700 cursor-pointer align-items">
             <h1 className="flex justify-center w-full">
               <Link to="/" aria-label="Instagram logo">
-                <img src="/images/logo.png" alt="Instagram" className="w-6/12 mx-auto" />
+                <img src="images/logo.png" alt="Instagram" className="w-6/12 mx-auto" />
               </Link>
             </h1>
           </div>
-          <div className="text-gray-700 text-center flex items-center align-items px-4">
+          <div className="flex items-center px-4 text-center text-gray-700 align-items">
             {/* Home */}
             {/* <Link to="/" aria-label="Dashboard">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
             </Link> */}
@@ -42,12 +42,12 @@ const Header = () => {
             </Link>
             {/* Add */}
             {/* <Link to="/" aria-label="Dashboard">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </Link>
             <Link to="/" aria-label="Dashboard">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </Link> */}
