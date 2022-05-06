@@ -1,4 +1,42 @@
+import ChatItem from "../components/Inbox/ChatItem";
+import RightInbox from "../components/Inbox/RightInbox";
+
 const Inbox = () => {
+
+  const chats = [
+    {
+      id: 1,
+      username: "/",
+      userImage: "/",
+      
+      text: "/",
+    },
+    {
+      id: 2,
+      username: "/",
+      userImage: "/",
+      text: "/",
+    },
+    {
+      id: 3,
+      username: "/",
+      userImage: "/",
+      text: "/",
+    },
+    {
+      id: 4,
+      username: "/",
+      userImage: "/",
+      text: "/",
+    },
+    {
+      id: 5,
+      username: "/",
+      userImage: "/",
+      text: "/",
+    }
+  ];
+
   return (
     <div>
       {/* <!-- component --> */}
@@ -37,82 +75,15 @@ const Inbox = () => {
             {/* <!-- Chats --> */}
             <ul class="py-1 overflow-auto">
               {/* <!-- Chat 1 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/0ZDqmDs/142030673-447983159572512-6561194794076636819-n.jpg" alt="Junior Coders" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">junior.coders</h3>
-                    <span class="text-xs text-gray-500">Active 20s ago</span>
-                  </div>
-                </button>
-              </li>
-              {/* <!-- Chat 2 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/n8D3NYv/107410209-890400198133639-1048997058040173171-n.jpg" alt="Tabaghe 16" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">tabaghe16</h3>
-                    <span class="text-xs text-gray-500">Active 6h ago</span>
-                  </div>
-                </button>
-              </li>
-              {/* <!-- Chat 3 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/bPb39qC/146062600-790305448495619-4399071814928120955-n.jpg" alt="MegaCoders" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">megacoders</h3>
-                    <span class="text-xs text-gray-500">Active 15min ago</span>
-                  </div>
-                </button>
-              </li>
-              {/* <!-- Chat 4 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/Y7H2b8s/83915635-1271088396614888-3530566050498215936-n.jpg" alt="Graphhit" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">graphhit.ir</h3>
-                    <span class="text-xs text-gray-500">Active 8h ago</span>
-                  </div>
-                </button>
-              </li>
-              {/* <!-- Chat 5 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/5RTNZzq/120597858-373955600298386-171038155143224317-n.jpg" alt="Dex Design" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">dex.design</h3>
-                    <span class="text-xs text-gray-500">Active 30min ago</span>
-                  </div>
-                </button>
-              </li>
-              {/* <!-- Chat 6 --> */}
-              <li>
-                <button class="flex items-center w-full px-4 py-2 select-none hover:bg-gray-100 focus:outline-none">
-                  <img class="w-12 mr-3 rounded-full border" src="https://i.ibb.co/PgxfpHJ/135397005-118438206790158-4813733027837640666-n.jpg" alt="Khoshbakhti" />
-                  <div class="transform translate-y-0.5 text-left">
-                    <h3 class="leading-4">khoshbakhti_official</h3>
-                    <span class="text-xs text-gray-500">Active Yesterday</span>
-                  </div>
-                </button>
-              </li>
+              {chats.map((chat) => (
+                // Hector
+                <ChatItem info={chat}  />
+                // Hector
+              ))}
             </ul>
           </div>
           {/* <!-- Right --> */}
-          <div class="hidden sm:w-1/2 md:w-2/3 lg:w-3/4 border-l border-gray-200 sm:flex items-center justify-center text-center">
-            <div class="space-y-5">
-              <div class="border border-black rounded-full inline-flex p-5 items-center justify-center">
-                <svg class="transform translate-y-1" height="52" viewBox="0 0 48 48" width="52">
-                  <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l13.2 13c.5.4 1.1.6 1.7.3l16.6-8c.7-.3 1.6-.1 2 .5.4.7.2 1.6-.5 2l-15.6 9.9c-.5.3-.8 1-.7 1.6l4.6 19c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.5-.5.5-1.1.2-1.6z"></path>
-                </svg>
-              </div>
-              <div class="space-y-0.5">
-                <h1 class="font-semibold text-xl">Your Messages</h1>
-                <p class="text-gray-600 min-w-46">Send private photos and messages to a friend or group</p>
-              </div>
-              <button class="bg-blue-500 py-1 px-3 rounded text-white select-none focus:outline-none">Send Message</button>
-            </div>
-          </div>
+          <RightInbox />
         </div>
       </div>
     </div>
