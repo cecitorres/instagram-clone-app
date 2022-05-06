@@ -10,7 +10,7 @@ const Timeline = () => {
   const { posts } = usePosts(user);
 
   return (
-    <div className='w-full bg-gray-100 border-t-2'>
+    <div className='w-full bg-gray-100 xs:border-t-2'>
       {new Array(10).fill(0).map((_, index) => (
         <Post key={index} postData={{ avatarURL: 'images/avatars/mariela.jpeg', altText: 'mariela', username: 'Mariela' }} />
       ))}

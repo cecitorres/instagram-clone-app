@@ -1,10 +1,7 @@
 const PostItem = ({ postData }) => {
   return (
-
-    <div className="bg-white border-gray-300">
-
-      <header className="grid items-center grid-cols-6 p-3 border-b border-b-gray-300">
-
+    <div className="bg-white border-gray-300 lg:mt-5">
+      <header className="grid items-center grid-cols-6 p-3 bg-white border border-b border-b-gray-300">
         <div className="">
           <img src="https://picsum.photos/50/50" className="w-10 h-10 rounded-full" alt="alt" />
         </div>
@@ -20,10 +17,10 @@ const PostItem = ({ postData }) => {
         </div>
 
       </header>
-
-      <photo>
-        <img src="https://picsum.photos/500/500" alt="alt" />
-      </photo>
+      {/* Photo */}
+      <div className="w-full">
+        <img src="https://picsum.photos/500/500" className="w-full" alt="alt" />
+      </div>
 
       <content className="flex flex-col gap-3 p-4">
 

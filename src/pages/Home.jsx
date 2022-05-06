@@ -5,12 +5,14 @@ import Footer from "../components/Home/Footer/Footer";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <Stories />
-      <Timeline />
+    <div className="bg-gray-100">
+        <Header />
+      <div className="flex flex-col max-w-2xl mx-auto">
+        <Stories />
+        <Timeline />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
